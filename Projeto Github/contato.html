@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--<meta http-equiv="Refresh" content="10; produtos.html" /> Para redirecionar a pagina-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <title>Minha página web</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript"></script>
+  </head>
+  <body>
+    <header>
+      <div class="caixa">
+        <div class="container">
+        <h1 class="productimg"> <img src="aboutme.PNG" alt="Sobre mim" id="aboutme" /></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="produtos.html">🚚 Produtos</a></li>
+            <li><a href="contato.html">📮 Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="texto1">
+      <p> Olá, seja bem vindo a um pequeno projeto feito com Html, Css e Javascript utilizando também o framework Bootstrap. Aqui poderei demonstrar um pouco de minhas habilidades no desenvolvimento Web.</p>
+    </div>
+   
+    <button class="butopen" id="butopen"
+      type="button"
+      class="btn btn-success btn-lg mt-2 ml-2"
+      data-toggle="modal"
+      data-target="#meuModal"
+    >
+      Sobre minha formação academica
+    </button>
+    <div id="meuModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+      
+          <div class="modal-header">
+            <h4 class="modal-title">Escolaridade e Cursos</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+            
+          </div>
+          <!-- Corpo do modal -->
+          <div class="modal-body">
+          <p>Técnico em eletrônica no eixo de controle e processos indutriais pela Escola Tecnica "FMC". Cursando superior em análise e desenvolvimento de sistemas na Instituição Uninter.
+          </p>
+          <p>
+
+            --
+          </p>
+          <p>Cursos profissionalizantes na área de desenvolvimento de software: Java avançado, C++ intermadiário, Html, Css e Javascript avançado, gerenciamento de dependências com Mavem, Versiosamento de software, Frameworks: Angular e Bootstrap, entre outros..</p>
+          </div>
+
+          <!-- Rodapé do modal-->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Fechar
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <form>
+        <label for="nomesobrenome">Nome: </label>
+        <input
+          type="text"
+          id="nomesobrenome"
+          class="input-padrao"
+          required
+          placeholder="Robson Augusto"
+        />
+        <label for="email"> E-mail: </label>
+        <input
+          type="text"
+          id="email"
+          class="input-padrao"
+          required
+          placeholder=" alura@gmail.com"
+        />
+        <label for="telefone">Telefone:</label>
+        <input
+          type="text"
+          id="telefone"
+          class="input-padrao"
+          required
+          placeholder=" +55(11) XXXX-XXXX"
+        />
+
+        <label for="mensagem">Mensagem</label>
+        <textarea
+          cols="25"
+          rows="10"
+          id="mensagem"
+          class="input-padrao"
+        ></textarea>
+        <fieldset>
+          <legend class="teste">Como prefere nosso contato?</legend>
+          <label for="radio-email"
+            ><input
+              type="radio"
+              name="contato"
+              value="email"
+              id="radio-email"
+            />📩 E-mail</label
+          >
+          <label for="radio-telefone"
+            ><input
+              type="radio"
+              name="contato"
+              value="Telefone"
+              id="radio-telefone"
+            />📞Telefone</label
+          >
+          <label for="radio-wpp"
+            ><input
+              type="radio"
+              name="contato"
+              value="Whatsapp"
+              id="radio-wpp"
+            />📲 Whatsapp</label
+          >
+        </fieldset>
+        <input type="submit" class="submit" />
+      </form>
+    </main>
+
+    <footer>
+      <img src="logo-branco.png" alt="Logotipo do site"/>
+      <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="contato.js">
+    </script>
+  </body>
+  
+</html>
