@@ -16,11 +16,13 @@ header {
 
 .texto1{
 	text-align: center;
-	font-size: 22px;
+	font-size: 20px;
 	margin-right: 100px;
 	margin-left: 100px;
 
 }
+
+
 nav {
 	position: absolute;
 	top: 155px;
@@ -48,49 +50,43 @@ nav a:hover {
 }
 
 .produtos {
-	width: 940px;
-	margin: 0 auto;
-	padding: 100px 0;
+
+	width: 900px;
+	padding: 15px 0;
+	margin-left: 175px;
 }
 
 .produtos li {
 	display: inline-block;
 	text-align: center;
-	width: 30%;
+	align-items: center;
+	width: 20%;
 	vertical-align: top;
-	margin: 0 1.5%;
-	padding: 30px 20px;
-	box-sizing: border-box;
-	border: 2px solid #000000;
+	padding: 10px;
+	border: 2px solid #ffffff;
 	border-radius: 10px;
 }
 
 .produtos li:hover {
-	border-color: #ffb452d7;
+	border-color: #ffffffd7;
 }
 
 .produtos li:active {
 	border-color: #088C19;	
 }
 
-.produtos li:hover h2 {
-	font-size: 34px;
+.produtos h2{
+	text-align: center;
+	font-size: 11px;
 }
 
-.produtos h2 {
-	font-size: 30px;
-	font-weight: bold;
+.produtos h2:hover{
+	font-size: 15px;
 }
 
-.produto-descricao {
-	font-size: 18px;
-}
 
-.produto-preco {
-	font-size: 22px;
-	font-weight: bold;
-	margin-top: 10px;
-}
+
+
 
 footer {
 	text-align: center;
@@ -171,8 +167,17 @@ td, th {
 }
 
 main{
-	width: 940px;
+	width: 600px;
 	margin: 0 auto;
+	margin-bottom: 15px;
+}
+
+.texto2{
+	margin-top: 5px;
+	margin-bottom: 10px;
+	font-size: 21px;
+	text-align: center;
+
 }
 
 form {
@@ -206,27 +211,22 @@ legend{
 	border: #FFFFFF;
 	padding: 10px 0 10px 0;;
 }
-.submit:hover{
-	transform:  scale(1.1);
-	transition: 1s ;
-	background-color: #ecb80b;
-}
-.butopen {
-	font-size: 18px;
-	margin: 20px auto;
-	display: block;
-	padding: 20px;
-}
 
 .butopen {
-	width: 30%;
-	padding: 10px 20px;
-	font-size: 20px;
+	padding: 8px 10px;
 	display: inline-block;
+	font-size: 22px;
 	background: orange;
 	color: rgb(85, 77, 77);
-	border: none;
+	border:none;
 	border-radius: 5px;
-	margin-left: 450px;
+	margin-left: 470px;
+	margin: 20px auto;
+	display: block;
 }
 
+.butopen:hover{
+	transform:  scale(1.1);
+	transition: 1s ;
+	background-color: #ffc400;
+}
